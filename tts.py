@@ -39,10 +39,6 @@ if submit and text:
                     file_name=file_name,  # Use the user-provided filename here
                     mime="audio/mp3"
                 )
-            if os.path.exists(output_path):
-                os.remove(output_path)
-            if os.path.exists(speed_up_path):
-                os.remove(speed_up_path)
         else:
             st.write("Cannot access the mp3.")
 
